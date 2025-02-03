@@ -8,7 +8,10 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  name : string = 'Madara withana';
-  village : string = 'kandy';
+  value : number = 0;
+
+  incrementValue(){
+    this.value++;
+  }
 
 }

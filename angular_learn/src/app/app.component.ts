@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  isLoggedIn : boolean = true;
+  
+  names : string[] = ['madara','withana','sandeepani','rusiru','chapana'];
 
 }

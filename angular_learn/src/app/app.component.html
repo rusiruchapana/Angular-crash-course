@@ -1,11 +1,10 @@
-@if (isLoggedIn) {
-  <h1>User logged succesfully.</h1>
-}
-@else {
-  <h1>User not logged.</h1>
-}
+<h1>Names list</h1>
 
-
+<ul>
+  @for (name of names; track $index) {
+    <li>{{ name }}</li>
+  }  
+</ul>
 
 
 

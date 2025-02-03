@@ -1,15 +1,29 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { PostService } from './services/post.service';
+
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet , FormsModule],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
   
-  names : string[] = ['madara','withana','sandeepani','rusiru','chapana'];
+  posts : any[] = [];
+  constructor(private post_service: PostService){
 
+  }
+
+  ngOnInit(){
+    this.post_service.getPosts().subscribe((data) => {
+      this.posts = data;
+    });
+  }
+
+
+
+  
 }

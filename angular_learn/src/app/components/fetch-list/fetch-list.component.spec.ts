@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TwoWayDataBindComponent } from './two-way-data-bind.component';
+import { FetchListComponent } from './fetch-list.component';
 
-describe('TwoWayDataBindComponent', () => {
-  let component: TwoWayDataBindComponent;
-  let fixture: ComponentFixture<TwoWayDataBindComponent>;
+describe('FetchListComponent', () => {
+  let component: FetchListComponent;
+  let fixture: ComponentFixture<FetchListComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TwoWayDataBindComponent]
+      imports: [FetchListComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TwoWayDataBindComponent);
+    fixture = TestBed.createComponent(FetchListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

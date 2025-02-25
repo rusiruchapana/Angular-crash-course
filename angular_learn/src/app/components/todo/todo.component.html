@@ -1,9 +1,0 @@
-
-<ul>
-    @for (todo of todos; track todo.id) {
-        <li>
-            <p>{{ todo.id }}:   {{todo.title}} {{todo.completed}}</p>
-            <button (click)="deleteTodoItem(todo.id)" >Delete</button>
-        </li>
-    }
-</ul>
